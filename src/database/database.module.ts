@@ -28,7 +28,7 @@ const inDevelopment = process.env.NODE_ENV === 'development';
         password: configService.get('DB_PASS'),
         database: configService.get('DB_NAME'),
         autoLoadModels: true,
-        synchronize: true,
+        // synchronize: true,
         logging: inDevelopment,
         models: [
           Customer,

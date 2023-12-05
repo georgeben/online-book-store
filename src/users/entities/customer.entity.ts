@@ -1,5 +1,6 @@
 import { Exclude } from 'class-transformer';
 import {
+  AllowNull,
   Column,
   CreatedAt,
   Model,
@@ -12,12 +13,15 @@ import {
   timestamps: true,
 })
 export class Customer extends Model<Customer> {
+  @AllowNull(false)
   @Column
   firstName: string;
 
+  @AllowNull(false)
   @Column
   lastName: string;
 
+  @AllowNull(false)
   @Unique
   @Column
   email: string;

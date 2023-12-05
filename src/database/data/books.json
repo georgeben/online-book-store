@@ -1,0 +1,12 @@
+[
+  { "title": "The Silent Observer", "price": 2500, "qtyInStock": 50 },
+  { "title": "Whispers in the Wind", "price": 1500, "qtyInStock": 30 },
+  { "title": "Quantum Paradox", "price": 4000, "qtyInStock": 25 },
+  { "title": "Eternal Reflections", "price": 1200, "qtyInStock": 40 },
+  { "title": "Shadows of Destiny", "price": 7000, "qtyInStock": 20 },
+  { "title": "The Enigma Cipher", "price": 3000, "qtyInStock": 35 },
+  { "title": "Midnight Serenade", "price": 2500, "qtyInStock": 15 },
+  { "title": "Echoes from the Abyss", "price": 3500, "qtyInStock": 48 },
+  { "title": "Voyage to Eternity", "price": 4000, "qtyInStock": 10 },
+  { "title": "The Lost Symphony", "price": 1000, "qtyInStock": 42 }
+]
