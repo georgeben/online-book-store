@@ -1,7 +1,7 @@
 import { InjectModel } from '@nestjs/sequelize';
 import { Optional } from 'sequelize';
 import { Customer } from '../entities/customer.entity';
-import { hash } from 'bcrypt';
+import { hash } from 'bcryptjs';
 import { CustomerAttributes } from '../interfaces/customers.interface';
 import { Injectable } from '@nestjs/common';
 
