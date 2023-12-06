@@ -78,4 +78,7 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+## Improvements
+- e2e tests
+- pagination
 
