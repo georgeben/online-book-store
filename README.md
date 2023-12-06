@@ -1,48 +1,68 @@
+# ONLINE BOOKSTORE
+
+![Online Bookstore ER Diagram](erd.png)
+
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+  ER Diagram
 </p>
-
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
-
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
 ## Description
+A RESTful API for a simple online bookstore.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Technologies
+- Typescript
+- NodeJS
+- [NestJS](https://nestjs.com/)
+- MySQL
+- Sequelize ORM
+- Redis
+- Docker
 
-## Installation
+## Features
+- RESTful API built with NestJS
+- Session authentication using Redis as session store
+- Input validation
+- Database transactions
+- Database migrations using Sequelize
+- Docker
+- Typescript support
+
+## API Documentation
+Click here for the [API Documentation](https://documenter.getpostman.com/view/5935573/2s9YeLZqFz)
+
+## Getting Started
+Before proceeding, make sure you have the following installed:
+- [Docker](https://www.docker.com/)
+
+Follow the instructions given below to get this project up and running on your local machine.  
+
+1. Clone this repository by running `git clone git@github.com:georgeben/online-book-store.git`
+2. `cd` online-book-store
+3. Create a file in the project's root named .env and copy the content of .env.schema and paste it into .env. Fill in the appropriate values for the credentials listed.
+4. Run `docker-compose --env-file .env run api npm run db:init` to initialize the database
+5. Run `docker-compose --env-file .env up -d` to start the application
+6. Access the application at [localhost:3000](http://localhost:3000)
+
+## Scripts
 
 ```bash
+# Install dependencies
 $ npm install
-```
 
-## Running the app
-
-```bash
-# development
+# Start application
 $ npm run start
 
-# watch mode
+# Start application in watch mode
 $ npm run start:dev
 
-# production mode
-$ npm run start:prod
+# Initialize database
+$ npm run db:init
+
+# Run migrations
+$ npm run migrate:up
+
+# Run seeders
+$ npm run db:seed
 ```
 
 ## Test
@@ -58,16 +78,4 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-## Support
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
