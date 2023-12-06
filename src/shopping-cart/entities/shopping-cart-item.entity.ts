@@ -11,7 +11,7 @@ import {
   Min,
 } from 'sequelize-typescript';
 import { ShoppingCart } from './shopping-cart.entity';
-import { Book } from 'src/books/entities/book.entity';
+import { Book } from '@/books/entities/book.entity';
 
 @Table({
   timestamps: true,

@@ -4,7 +4,7 @@ import { AuthService } from './auth.service';
 import { LocalStrategy } from './local.strategy';
 import { AuthSerializer } from './serialization.provider';
 import { AuthController } from './auth.controller';
-import { UsersModule } from 'src/users/users.module';
+import { UsersModule } from '@/users/users.module';
 
 @Module({
   imports: [

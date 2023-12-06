@@ -6,11 +6,11 @@ import {
 import { CreateBookDto } from './dto/create-book.dto';
 import { CreateGenreDto } from './dto/create-genre.dto';
 import { GenreRepository } from './repositories/genre.repository';
-import { AuthorService } from 'src/author/author.service';
+import { AuthorService } from '@/author/author.service';
 import { BookRepository } from './repositories/books.repository';
 import { Genre } from './entities/genre.entity';
 import { Book } from './entities/book.entity';
-import { Author } from 'src/author/entities/author.entity';
+import { Author } from '@/author/entities/author.entity';
 import { ListBooksDto } from './dto/list-books.dto';
 import { Op } from 'sequelize';
 

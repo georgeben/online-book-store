@@ -8,7 +8,7 @@ import {
   BelongsToMany,
   Index,
 } from 'sequelize-typescript';
-import { Book } from 'src/books/entities/book.entity';
+import { Book } from '@/books/entities/book.entity';
 import { BookAuthor } from '../../books/entities/book-author.entity';
 
 @Table({

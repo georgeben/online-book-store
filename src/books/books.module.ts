@@ -5,7 +5,7 @@ import { GenreRepository } from './repositories/genre.repository';
 import { Genre } from './entities/genre.entity';
 import { SequelizeModule } from '@nestjs/sequelize';
 import { Book } from './entities/book.entity';
-import { AuthorModule } from 'src/author/author.module';
+import { AuthorModule } from '@/author/author.module';
 import { BookRepository } from './repositories/books.repository';
 
 @Module({

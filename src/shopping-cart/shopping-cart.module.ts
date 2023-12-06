@@ -5,8 +5,8 @@ import { ShoppingCartRepository } from './repository/shopping-cart.repository';
 import { ShoppingCart } from './entities/shopping-cart.entity';
 import { ShoppingCartItem } from './entities/shopping-cart-item.entity';
 import { SequelizeModule } from '@nestjs/sequelize';
-import { BooksModule } from 'src/books/books.module';
-import { OrdersModule } from 'src/orders/orders.module';
+import { BooksModule } from '@/books/books.module';
+import { OrdersModule } from '@/orders/orders.module';
 
 @Module({
   imports: [

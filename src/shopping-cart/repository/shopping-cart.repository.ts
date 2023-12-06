@@ -4,9 +4,9 @@ import { ShoppingCart } from '../entities/shopping-cart.entity';
 import { ShoppingCartItem } from '../entities/shopping-cart-item.entity';
 import { AddItemToCartDto } from '../dto/add-item-shopping-cart.dto';
 import { Sequelize } from 'sequelize-typescript';
-import { Book } from 'src/books/entities/book.entity';
-import { Genre } from 'src/books/entities/genre.entity';
-import { Author } from 'src/author/entities/author.entity';
+import { Book } from '@/books/entities/book.entity';
+import { Genre } from '@/books/entities/genre.entity';
+import { Author } from '@/author/entities/author.entity';
 import { Transaction } from 'sequelize';
 
 @Injectable()

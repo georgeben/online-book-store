@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { literal, Transaction } from 'sequelize';
-import { BookRepository } from 'src/books/repositories/books.repository';
+import { BookRepository } from '@/books/repositories/books.repository';
 import { UpdateInventoryItem } from './inventory.interface';
 
 @Injectable()

@@ -2,8 +2,8 @@ import { Injectable, UnauthorizedException } from '@nestjs/common';
 import { compare } from 'bcryptjs';
 import { LoginDto } from './dto/login.dto';
 import { SignUpDto } from './dto/sign-up.dto';
-import { UsersService } from 'src/users/users.service';
-import { CustomerRepository } from 'src/users/repository/customer.repository';
+import { UsersService } from '@/users/users.service';
+import { CustomerRepository } from '@/users/repository/customer.repository';
 
 @Injectable()
 export class AuthService {

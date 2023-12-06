@@ -1,6 +1,6 @@
-import { Author } from 'src/author/entities/author.entity';
+import { Author } from '@/author/entities/author.entity';
 import { Genre } from '../entities/genre.entity';
-import { AuthorAttr } from 'src/author/author.interface';
+import { AuthorAttr } from '@/author/author.interface';
 
 export interface GenreAttr {
   name: string;

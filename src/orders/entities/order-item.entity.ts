@@ -12,7 +12,7 @@ import {
   DataType,
 } from 'sequelize-typescript';
 import { CustomerOrder } from './order.entity';
-import { Book } from 'src/books/entities/book.entity';
+import { Book } from '@/books/entities/book.entity';
 
 @Table({
   timestamps: true,

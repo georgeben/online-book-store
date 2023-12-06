@@ -4,7 +4,7 @@ import { FindOptions, UpdateOptions } from 'sequelize';
 import { Book } from '../entities/book.entity';
 import { ICreateBook } from '../interfaces/books.interface';
 import { Genre } from '../entities/genre.entity';
-import { Author } from 'src/author/entities/author.entity';
+import { Author } from '@/author/entities/author.entity';
 
 @Injectable()
 export class BookRepository {
@@ -31,7 +31,7 @@ export class BookRepository {
     return this.bookModel.findAll(options);
   }
 
-  findById(id: number): Promise<Book> {
+  findById(id: number): Promise<Book | null> {
     return this.bookModel.findByPk(id, {
       include: [
         { model: Genre, through: { attributes: [] } },

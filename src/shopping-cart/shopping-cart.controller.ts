@@ -10,9 +10,9 @@ import {
 } from '@nestjs/common';
 import { ShoppingCartService } from './shopping-cart.service';
 import { AddItemToCartDto } from './dto/add-item-shopping-cart.dto';
-import { CurrentUser } from 'src/shared/decorators/current-user.decorator';
-import { LoggedInGuard } from 'src/auth/guards/logged-in.guard';
-import { Customer } from 'src/users/entities/customer.entity';
+import { CurrentUser } from '@/shared/decorators/current-user.decorator';
+import { LoggedInGuard } from '@/auth/guards/logged-in.guard';
+import { Customer } from '@/users/entities/customer.entity';
 
 @UseGuards(LoggedInGuard)
 @Controller('shopping-cart')

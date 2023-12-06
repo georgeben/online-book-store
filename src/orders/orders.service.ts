@@ -9,8 +9,8 @@ import { OrderRepository } from './repositories/order.repository';
 import { OrderItemRepository } from './repositories/order-item.repository';
 import { CreateOrder } from './orders.interfaces';
 import { ORDER_STATUS } from './order.constants';
-import { InventoryService } from 'src/inventory/inventory.service';
-import { UpdateInventoryItem } from 'src/inventory/inventory.interface';
+import { InventoryService } from '@/inventory/inventory.service';
+import { UpdateInventoryItem } from '@/inventory/inventory.interface';
 import { CustomerOrder } from './entities/order.entity';
 import { PaymentRepository } from './payment.repository';
 

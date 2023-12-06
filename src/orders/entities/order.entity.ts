@@ -12,7 +12,7 @@ import {
   Default,
   DataType,
 } from 'sequelize-typescript';
-import { Customer } from 'src/users/entities/customer.entity';
+import { Customer } from '@/users/entities/customer.entity';
 import { CustomerOrderItem } from './order-item.entity';
 import { ORDER_STATUS } from '../order.constants';
 

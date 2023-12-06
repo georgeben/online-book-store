@@ -8,9 +8,9 @@ import {
   ParseIntPipe,
 } from '@nestjs/common';
 import { OrdersService } from './orders.service';
-import { LoggedInGuard } from 'src/auth/guards/logged-in.guard';
-import { CurrentUser } from 'src/shared/decorators/current-user.decorator';
-import { Customer } from 'src/users/entities/customer.entity';
+import { LoggedInGuard } from '@/auth/guards/logged-in.guard';
+import { CurrentUser } from '@/shared/decorators/current-user.decorator';
+import { Customer } from '@/users/entities/customer.entity';
 import { PayForOrderDto } from './dto/pay-for-order.dto';
 
 @UseGuards(LoggedInGuard)

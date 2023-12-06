@@ -12,7 +12,7 @@ import {
 } from 'sequelize-typescript';
 import { Genre } from './genre.entity';
 import { BookGenre } from './book-genre.entity';
-import { Author } from 'src/author/entities/author.entity';
+import { Author } from '@/author/entities/author.entity';
 import { BookAuthor } from './book-author.entity';
 
 @Table({

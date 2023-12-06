@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { InventoryService } from './inventory.service';
-import { BooksModule } from 'src/books/books.module';
+import { BooksModule } from '@/books/books.module';
 
 @Module({
   imports: [BooksModule],

@@ -5,7 +5,7 @@ import {
   Model,
   HasMany,
 } from 'sequelize-typescript';
-import { Customer } from 'src/users/entities/customer.entity';
+import { Customer } from '@/users/entities/customer.entity';
 import { ShoppingCartItem } from './shopping-cart-item.entity';
 
 @Table

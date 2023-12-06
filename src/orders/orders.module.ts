@@ -6,7 +6,7 @@ import { CustomerOrder } from './entities/order.entity';
 import { CustomerOrderItem } from './entities/order-item.entity';
 import { OrderRepository } from './repositories/order.repository';
 import { OrderItemRepository } from './repositories/order-item.repository';
-import { InventoryModule } from 'src/inventory/inventory.module';
+import { InventoryModule } from '@/inventory/inventory.module';
 import { PaymentRepository } from './payment.repository';
 import { Payment } from './entities/payment.entity';
 

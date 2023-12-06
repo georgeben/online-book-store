@@ -1,4 +1,4 @@
-import { BookAttr } from 'src/books/interfaces/books.interface';
+import { BookAttr } from '@/books/interfaces/books.interface';
 import { ShoppingCart } from './entities/shopping-cart.entity';
 
 export interface ShoppingCartItemAttr {

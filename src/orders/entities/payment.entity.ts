@@ -8,7 +8,7 @@ import {
   ForeignKey,
   BelongsTo,
 } from 'sequelize-typescript';
-import { Customer } from 'src/users/entities/customer.entity';
+import { Customer } from '@/users/entities/customer.entity';
 import { CustomerOrder } from './order.entity';
 
 @Table({ timestamps: true })

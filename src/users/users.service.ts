@@ -1,6 +1,6 @@
 import { ConflictException, Injectable } from '@nestjs/common';
 import { CustomerRepository } from './repository/customer.repository';
-import { SignUpDto } from 'src/auth/dto/sign-up.dto';
+import { SignUpDto } from '@/auth/dto/sign-up.dto';
 
 @Injectable()
 export class UsersService {

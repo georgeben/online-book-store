@@ -5,11 +5,11 @@ import {
 } from '@nestjs/common';
 import { AddItemToCartDto } from './dto/add-item-shopping-cart.dto';
 import { ShoppingCartRepository } from './repository/shopping-cart.repository';
-import { BookRepository } from 'src/books/repositories/books.repository';
+import { BookRepository } from '@/books/repositories/books.repository';
 import { ShoppingCartItem } from './entities/shopping-cart-item.entity';
-import { OrdersService } from 'src/orders/orders.service';
+import { OrdersService } from '@/orders/orders.service';
 import { ShoppingCart } from './entities/shopping-cart.entity';
-import { CustomerOrder } from 'src/orders/entities/order.entity';
+import { CustomerOrder } from '@/orders/entities/order.entity';
 import { ShoppingCartResponse } from './shopping-cart.interface';
 
 @Injectable()
