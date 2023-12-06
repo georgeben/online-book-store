@@ -38,7 +38,7 @@ Follow the instructions given below to get this project up and running on your l
 
 1. Clone this repository by running `git clone git@github.com:georgeben/online-book-store.git`
 2. `cd` online-book-store
-3. Create a file in the project's root named .env and copy the content of .env.schema and paste it into .env. Fill in the appropriate values for the credentials listed.
+3. Create a file in the project's root named .env and copy the content of .env.schema and paste it into .env. Fill in the appropriate values for any missing env.
 4. Run `docker-compose --env-file .env run api npm run db:init` to initialize the database
 5. Run `docker-compose --env-file .env up -d` to start the application
 6. Access the application at [localhost:3000](http://localhost:3000)
